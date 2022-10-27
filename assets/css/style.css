@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: black;
+    cursor: pointer;
+}
+
+.header {
+    background-color: rgb(0, 250, 54);
+    padding: 7px 0px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+}
+
+.icons {
+    padding: 30px 10% 0px 10%;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+.icons i span {
+    font-size: 14px !important;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 1.6rem;
+}
+
+.user_details_table {
+    display: flex;
+
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.user_details_table table {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.user_details_table table thead {
+    background-color: black;
+    color: white;
+
+}
+
+.user_details_table table thead tr th {
+    padding: 10px;
+}
+
+.user_details_table table tbody {
+    text-align: center;
+}
+
+.user_details_table table tbody tr td {
+    padding: 8px;
+    border: 0.5px solid rgb(7, 7, 7);
+}
+
+table tbody tr:hover {
+    background-color: rgb(183, 201, 255);
+}
+
+.from-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+
+}
+
+.from-container form {
+    width: 60%;
+}
+
+.input-form input {
+    width: 95%;
+    padding: 10px;
+
+}
+
+.input-form input:focus {
+    outline: none;
+}
+
+.form-group {
+    display: flex;
+}
+
+.radio {
+    padding: 0px 30px;
+}
+
+button {
+    width: 100%;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 0px;
+    cursor: pointer;
+}

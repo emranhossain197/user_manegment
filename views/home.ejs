@@ -1,0 +1,31 @@
+<%- include('include/_head'); -%>
+
+    <div class="icons">
+        <a href="add-user"> <i class="fa-solid fa-angles-left"> <span>Add user</span></i></a>
+    </div>
+    <div class="container">
+        <h1>New User</h1>
+        <p>All user information give this table </p>
+    </div>
+    <div class="user_details_table">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>@Email</th>
+                    <th>Gender</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <%- include('include/_show'); -%>
+            </tbody>
+
+        </table>
+    </div>
+
+
+    <%- include('include/_footer'); -%>

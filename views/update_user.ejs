@@ -1,0 +1,50 @@
+<%- include('include/_head'); -%>
+    <div class="icons">
+        <a href="/"> <i class="fa-solid fa-angles-left"> <span>All user</span></i></a>
+    </div>
+    <div class="container">
+        <h1>Update User</h1>
+        <p>Update the user information.</p>
+    </div>
+    <div class="from-container">
+        <form method="POST" id="update_user">
+            <div class="input-form">
+                <input type="hidden" name="id" id="id" value="<%= user._id %>">
+                <label for="name">Name</label><br>
+                <input type="text" name="name" id="name" value="<%= user.name %>" placeholder="Name ">
+            </div> <br>
+            <div class="input-form">
+                <label for="email">E-mail</label><br>
+                <input type="text" name="email" id="email" value="<%= user.email %>" placeholder="example@gmail.com">
+            </div><br>
+
+            <div class="form-group">
+                <label for="gender" class="text-light">Gender</label>
+                <div class="radio inline">
+                    <input type="radio" id="radio-2" name="gender" value="Male" <%=user.gender=='Male' ? 'checked' : ''
+                        %>>
+                    <label for="radio-2" class="radio-label">Male</label>
+                </div>
+                <div class="radio inline">
+                    <input type="radio" id="radio-3" name="gender" value="Female" <%=user.gender=="Female" ? "checked"
+                        : "" %>>
+                    <label for="radio-3" class="radio-label">Female</label>
+                </div>
+            </div><br>
+            <div class="form-group">
+                <label for="gender" class="text-light">Status</label>
+                <div class="radio inline">
+                    <input type="radio" id="radio-4" name="status" value="Active" <%=user.status=="Active" ? "checked"
+                        : "" %>>
+                    <label for="radio-4" class="radio-label">Active</label>
+                </div>
+                <div class="radio inline">
+                    <input type="radio" id="radio-5" name="status" value="Inactive" <%=user.status=="Inactive"
+                        ? "checked" : "" %>>
+                    <label for="radio-5" class="radio-label">Inactive</label>
+                </div>
+            </div><br><br>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    <%- include('include/_footer'); -%>
